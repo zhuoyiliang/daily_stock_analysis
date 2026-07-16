@@ -287,7 +287,7 @@ def get_thinking_extra_body(model: str) -> Optional[dict]:
       These models automatically return reasoning_content in API responses; sending
       extra_body would cause 400 because the API already enables thinking by default.
       Return None to avoid duplicate activation.
-    - Opt-in models (_OPT_IN_THINKING_MODELS: deepseek-chat): Return the activation
+    - Opt-in models (_OPT_IN_THINKING_MODELS: deepseek-chat legacy): Return the activation
       payload to explicitly enable thinking mode.
     - All other models: Return None (no thinking mode).
     """
